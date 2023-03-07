@@ -37,7 +37,7 @@ call :print
 if !i! LEQ %to_page% goto download
 
 echo OK...
-del /q /f %0
+del "%~f0"
 exit
 
 
