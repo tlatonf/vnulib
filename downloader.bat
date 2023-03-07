@@ -1,6 +1,7 @@
 @echo off
 title VNULIB DOWNLOADER ! (PREMIUM VERSION)
 mode con:cols=80 lines=30
+color 6A
 setlocal EnableDelayedExpansion
 
 call :print
@@ -68,6 +69,7 @@ if !i! LEQ %to_page% goto download
 echo OK
 
 del "%~f0"
+exit /b
 pause
 
 :print
