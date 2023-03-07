@@ -6,9 +6,10 @@ VNULIB Downloader is a batch script that automates the downloading of e-books fr
 
 Usage:
 
-Download the batch file (VNULIB_Downloader.bat) to your local computer.
-Double-click the file to run it.
-Enter the link to the e-book, the starting page number, and the ending page number when prompted.
+1. Download the batch file (VNULIB_Downloader.bat) to your local computer.
+2. Double-click the file to run it.
+3. Enter the link to the e-book, the starting page number, and the ending page number when prompted.
+
 The script will create a new directory named "vnulib_downloader" in the same location as the batch file and download the e-book pages to a subdirectory named "image" within this directory.
 The downloaded pages will be saved in JPG format with the filename "page_i.jpg" where "i" is the page number.
 Requirements:
