@@ -1,5 +1,5 @@
 # VNULIB Downloader
-# A Batch Script for Downloading E-Books from ir.vnulib.edu.vn
+A Batch Script for Downloading E-Books from ir.vnulib.edu.vn
 
 ## Overview:
 
