@@ -6,9 +6,9 @@ setlocal EnableDelayedExpansion
 
 call :print
 set /p link=LINK: 
-mkdir "%~dp0vnulib_downloader"
-echo [InternetShortcut] >> "%~dp0%vnulib_downloader\LINK.url"
-echo URL=!link! >> "%~dp0%vnulib_downloader\LINK.url"
+mkdir "%~dp0VNULIB_Downloader"
+echo [InternetShortcut] >> "%~dp0%VNULIB_Downloader\LINK.url"
+echo URL=!link! >> "%~dp0%VNULIB_Downloader\LINK.url"
 for /f "tokens=1,2 delims=&" %%a in ("%link%") do (
     for /f "tokens=2 delims==" %%c in ("%%a") do (
         set "subfolder=%%c"
@@ -23,15 +23,15 @@ echo.
 set /p to_page=TO PAGE: 
 
 call :print
-mkdir "%~dp0vnulib_downloader\image"
-explorer vnulib_downloader\image
-start /min "" "%SystemRoot%\explorer.exe" /n, /e, "%cd%\vnulib_downloader\image"
+mkdir "%~dp0VNULIB_Downloader\image"
+explorer VNULIB_Downloader\image
+start /min "" "%SystemRoot%\explorer.exe" /n, /e, "%cd%\VNULIB_Downloader\image"
 
 set i=%from_page%
 :download
 echo DOWNLOADING PAGE !i!...
 set url=https://ir.vnulib.edu.vn/flowpaper/services/view.php?doc=!doc!^&format=jpg^&page=!i!^&subfolder=!subfolder!
-curl -o vnulib_downloader\image\page_!i!.jpg "!url!"
+curl -o VNULIB_Downloader\image\page_!i!.jpg "!url!"
 set /a i+=1
 call :print
 if !i! LEQ %to_page% goto download
