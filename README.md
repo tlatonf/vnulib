@@ -14,7 +14,7 @@ VNULIB Downloader is a batch script that automates the downloading of e-books fr
 
 ## Usage:
 
-1. Download the batch file *(script.bat)* to your local computer.
+1. Download the batch file *(downloader.bat)* to your local computer.
 2. Double-click the file to run it.
 3. Enter the link to the e-book, the starting page number, and the ending page number when prompted.
 Ex:
