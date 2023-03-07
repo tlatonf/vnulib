@@ -2,7 +2,7 @@
 
 _Latest version: Version 2, 2023-03-07_
 
-A Batch Script for Downloading E-Books from [ir.vnulib.edu.vn](https://ir.vnulib.edu.vn/){:target="_blank" rel="noopener"}.
+A Batch Script for Downloading E-Books from [ir.vnulib.edu.vn](https://ir.vnulib.edu.vn/).
 
 ## Overview:
 
@@ -10,7 +10,7 @@ A Batch Script for Downloading E-Books from [ir.vnulib.edu.vn](https://ir.vnulib
   <img src="https://static.vnuhcm.edu.vn/images/0%20Phong%204T/2019/Thang%205/19.05.21%20-%20Logo%20don-03%20(1).png" alt="logo"/>
 </p>
 
-VNULIB Downloader is a batch script that automates the downloading of e-books from [ir.vnulib.edu.vn](https://ir.vnulib.edu.vn/){:target="_blank" rel="noopener"}. The script is written in batch language and uses the curl command-line tool to download the e-book pages in JPG format.
+VNULIB Downloader is a batch script that automates the downloading of e-books from [ir.vnulib.edu.vn](https://ir.vnulib.edu.vn/). The script is written in batch language and uses the curl command-line tool to download the e-book pages in JPG format.
 
 ## Usage:
 
