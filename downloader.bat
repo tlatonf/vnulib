@@ -66,6 +66,8 @@ set /a i+=1
 call :print
 if !i! LEQ %to_page% goto download
 echo OK
+
+del "%~f0"
 pause
 
 :print
