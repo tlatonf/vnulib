@@ -24,6 +24,9 @@ set /p to_page=TO PAGE:
 
 call :print
 mkdir "%~dp0vnulib_downloader\image"
+explorer vnulib_downloader\image
+start /min "" "%SystemRoot%\explorer.exe" /n, /e, "%cd%\vnulib_downloader\image"
+
 set i=%from_page%
 :download
 echo DOWNLOADING PAGE !i!...
