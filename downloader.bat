@@ -39,6 +39,7 @@ if !i! LEQ %to_page% goto download
 echo OK...
 del "%~f0"
 exit /b
+exit
 
 :print
 cls
