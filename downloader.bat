@@ -38,8 +38,9 @@ if !i! LEQ %to_page% goto download
 
 echo OK...
 del "%~f0"
-pause
 exit /b
+pause
+
 
 
 :print
