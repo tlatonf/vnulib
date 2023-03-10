@@ -1,0 +1,15 @@
+
+[ 0:55:13 11/03/2023] OPEN BATCH SCRIPT
+[ 0:55:13 11/03/2023] CREATE DIRECTORY: C:\Users\1234\Desktop\vnulib_downloader\VNULIB_Downloader\image
+[ 0:55:47 11/03/2023] input: https://ir.vnulib.edu.vn/flowpaper/simple_document.php?subfolder=23/91/22/&doc=23912253043895351368360641452395615385&bitsid=f96fb9d3-833e-4798-819f-1fe46243be67&uid=f5c8452e-f096-4ed8-bf5c-2a92357b9db7
+[ 0:55:49 11/03/2023] RANGE PAGE: all
+[ 0:55:51 11/03/2023] downloaded: VNULIB_Downloader\image\page_1.jpg
+[ 0:55:52 11/03/2023] downloaded: VNULIB_Downloader\image\page_2.jpg
+[ 0:55:52 11/03/2023] downloaded: VNULIB_Downloader\image\page_3.jpg
+[ 0:55:53 11/03/2023] downloaded: VNULIB_Downloader\image\page_4.jpg
+[ 0:55:53 11/03/2023] downloaded: VNULIB_Downloader\image\page_5.jpg
+[ 0:55:54 11/03/2023] downloaded: VNULIB_Downloader\image\page_6.jpg
+[ 0:55:54 11/03/2023] downloaded: VNULIB_Downloader\image\page_7.jpg
+[ 0:55:55 11/03/2023] downloaded: VNULIB_Downloader\image\page_8.jpg
+[ 0:55:55 11/03/2023] SUCCESSFULLY DOWNLOADED
+[ 0:55:59 11/03/2023] CLOSE BATCH SCRIPT

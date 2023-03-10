@@ -1,6 +1,6 @@
 # VNULIB Downloader
 
-_Latest version: Version 1.2, 2023-03-09_
+_Latest version: Version 1.2, 2023-03-11_
 
 A Batch Script for Downloading E-Books from [ir.vnulib.edu.vn](https://ir.vnulib.edu.vn/).
 
@@ -16,18 +16,9 @@ VNULIB Downloader is a batch script that automates the downloading of e-books fr
 
 1. Download the batch file *(downloader_v1.2.bat)* to your local computer.
 2. Double-click the file to run it.
-3. Enter the link to the e-book, the starting page number, and the ending page number when prompted.
-Ex:
-````
-LINK: https://ir.vnulib.edu.vn/flowpaper/simple_document.php?subfolder=16/63/92/&doc=1663925828253380950770207071513029111&bitsid=b3c4ca73-22a2-4eda-a62a-acfc314470eb&uid=f5c8452e-f096-4ed8-bf5c-2a92357b9db7
-
-FROM PAGE: 1
-
-TO PAGE: 302
-````
-
-
-5. The script will create a new directory named *"vnulib_downloader"* in the same location as the batch file and download the e-book pages to a subdirectory named *"image"* within this directory.
+3. Enter the link to the e-book.
+4. Select options for the range of pages to download.
+5. The script will create a new directory named *"VNULIB_Downloader"* in the same location as the batch file and download the e-book pages to a subdirectory named *"image"* within this directory.
 6. The downloaded pages will be saved in JPG format with the filename *"page_i.jpg"* where *"i"* is the page number.
 
 ## Requirements:
