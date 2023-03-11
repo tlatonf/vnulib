@@ -91,13 +91,12 @@ set margins=
         timeout /t 3 /nobreak > NUL
         start VNULIB_Downloader
         rem DEL_BATCH_SCRIPT
-        del %0
+        del "%~f0"
         exit
         :::: END EXIT_DOWNLOADER
 
         endlocal
         :: END MAIN
-
 
 :: BEGIN FUNCTION
 
@@ -129,7 +128,7 @@ goto :eof
 goto :eof
 
 :MENU
-    call :header_menu %*
+    call :header_menu %1
     :input_choice
     set /p choice=--^>       ENTER YOUR CHOICE: 
     if %choice% EQU A goto option1
@@ -161,17 +160,13 @@ goto :eof
             :: BEGIN CHECK_INPUT_RANGE
             if 1%from_page% NEQ +1%from_page% goto process_error
             if 1%to_page% NEQ +1%to_page% goto process_error
-            
             if 0 GEQ %from_page% goto process_error
             if %from_page% GTR %to_page% goto process_error
-
             goto exit_check
-
             :process_error
                 echo %margins%CONDITION: 0 ^< FROM PAGE ^<= TO PAGE
                 goto re_input_range_page
             :: END CHECK_INPUT_RANGE
-
         :exit_check
         goto download_loop
 
@@ -189,7 +184,7 @@ goto :eof
 goto :eof
 
 :header_menu
-    cls
+    call :clean_console
     call :newline 2
     echo %margins% ____    ____     ________     ____  _____     _____  _____
     echo %margins%^|_   \  /   _^|   ^|_   __  ^|   ^|_   \^|_   _^|   ^|_   _^|^|_   _^|
@@ -202,7 +197,7 @@ goto :eof
     echo %margins%[A]. ALL RANGE PAGE
     echo %margins%[S]. SELECT RANGE PAGE
     echo %margins%[B]. BACK TO ENTER LINK
-    if "%*" EQU "DOWNLOADED" (
+    if "%1" EQU "DOWNLOADED" (
     echo %margins%[D]. DIRECT TO SMALLPDF TO CONVERT IMAGE TO PDF
     )
     echo %margins%[E]. EXIT
@@ -211,7 +206,7 @@ goto :eof
     goto :eof
 
 :header_done
-    cls
+    call :clean_console
     call :newline 2
     echo    /\\\\\\\\\\\\          /\\\\\       /\\\\\     /\\\  /\\\\\\\\\\\\\\\       
     echo    \/\\\////////\\\      /\\\///\\\    \/\\\\\\   \/\\\ \/\\\///////////       
@@ -234,7 +229,7 @@ goto :eof
 goto :eof
 
 :header_printer
-    cls
+    call :clean_console
     echo *********************************************************************************
     echo ******************* SCRIPT DOWNLOAD EBOOK FROM VNUHCM LIBRARY *******************
     echo ************************ VERSION 1.2 - PUBLISH 2023-03-11 ***********************
@@ -257,6 +252,7 @@ goto :eof
 goto :eof
 
 :header_exit
+    call :clean_console
     call :newline 2
     echo %margins%  ______      ________     ________                   
     echo %margins% /      \    ^|        \   ^|        \                  
@@ -295,6 +291,10 @@ goto :eof
         goto :eof
     )
     for /l %%i in (1,1,%1) do echo.    
+goto :eof
+
+:clean_console
+    cls
 goto :eof
 
 :: END FUNCTION
